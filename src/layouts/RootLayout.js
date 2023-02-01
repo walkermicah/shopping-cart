@@ -2,7 +2,7 @@ import { Outlet, Link, NavLink } from 'react-router-dom';
 
 import logo from '../img/logo.svg';
 
-import '../styles/RootLayout.scss';
+import '../styles/layouts/RootLayout.scss';
 
 function RootLayout() {
   return (

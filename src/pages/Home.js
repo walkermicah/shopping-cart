@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import '../styles/Home.scss';
+import '../styles/pages/Home.scss';
 
 function Home() {
   return (
