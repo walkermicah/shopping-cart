@@ -1,0 +1,41 @@
+@import '../abstracts/mixins';
+
+.Home {
+  @include background-img;
+
+  &-banner {
+    padding: 3rem;
+    display: grid;
+    gap: 3rem;
+    justify-items: center;
+    position: relative;
+    top: 20%;
+  }
+
+  h2 {
+    font-size: 7rem;
+    color: white;
+    z-index: 2;
+    text-align: center;
+  }
+
+  a {
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    border-radius: 3px;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    word-spacing: 1rem;
+    font: inherit;
+    font-size: 3rem;
+    font-weight: 400;
+    z-index: 2;
+    transition: all 0.3s;
+  }
+
+  a:hover {
+    transform: translateY(-1px);
+  }
+}
