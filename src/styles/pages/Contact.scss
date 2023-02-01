@@ -1,0 +1,99 @@
+@import '../abstracts/mixins';
+
+.Contact {
+  @include background-img;
+  padding: 2rem;
+
+  display: flex;
+  justify-content: center;
+
+  &-form {
+    background-color: rgb(0, 0, 0);
+    width: 45%;
+    height: 100%;
+    display: grid;
+    align-items: start;
+    padding: 0rem 3rem;
+    z-index: 2;
+
+    h3 {
+      text-align: center;
+      padding: 1.5rem;
+      color: white;
+      font-size: 4rem;
+      word-spacing: 1rem;
+    }
+
+    label {
+      display: grid;
+      padding: 0rem 2rem;
+    }
+
+    span {
+      color: white;
+      padding: 0.5rem;
+      font-weight: 300;
+      border-radius: 3px;
+    }
+
+    &-name,
+    &-email,
+    &-message {
+      border: none;
+      border-radius: 3px;
+      padding: 1rem;
+    }
+
+    &-name:focus,
+    &-email:focus,
+    &-message:focus {
+      outline: none;
+      border-bottom: 5px solid rgb(193, 43, 43);
+    }
+
+    &-message {
+      height: 15rem;
+      resize: none;
+    }
+
+    button {
+      justify-self: center;
+      padding: 1rem 2rem;
+      cursor: pointer;
+      color: white;
+      background-color: rgb(0, 0, 0, 1);
+      border: 1px solid white;
+      border-radius: 3px;
+      text-transform: uppercase;
+      font: inherit;
+      font-size: 2.5rem;
+      font-weight: 400;
+      transition: all 0.3s;
+    }
+  }
+
+  button:hover {
+    transform: translateY(-1px);
+  }
+}
+
+/* 1000px  */
+@media only screen and (max-width: 62.5em) {
+  .Contact-form {
+    width: 60%;
+  }
+}
+
+/* 700px  */
+@media only screen and (max-width: 43.75em) {
+  .Contact-form {
+    width: 75%;
+  }
+}
+
+/* 600px  */
+@media only screen and (max-width: 37.5em) {
+  .Contact-form {
+    width: 95%;
+  }
+}
