@@ -1,5 +1,3 @@
-import uniqid from 'uniqid';
-
 import greenApple from '../img/products/green-apple.png';
 import redApple from '../img/products/red-apple.png';
 import bananas from '../img/products/bananas.png';
@@ -27,17 +25,17 @@ import eggs from '../img/products/eggs.png';
 
 const productData = [
   {
-    id: uniqid(),
+    id: 'green-apple',
     title: 'Apples (Granny Smith)',
     category: 'produce',
     price: 1.5,
     unit: 'each',
-    quantity: 1,
+    quantity: 0,
     imgUrl: greenApple,
   },
 
   {
-    id: uniqid(),
+    id: 'red-apple',
     title: 'Apples (Pink Lady)',
     category: 'produce',
     price: 1.5,
@@ -47,7 +45,7 @@ const productData = [
   },
 
   {
-    id: uniqid(),
+    id: 'broccoli',
     title: 'Broccoli',
     category: 'produce',
     price: 4.5,
@@ -57,7 +55,7 @@ const productData = [
   },
 
   {
-    id: uniqid(),
+    id: 'tomatoes',
     title: 'Tomatoes',
     category: 'produce',
     price: 6,
@@ -67,7 +65,7 @@ const productData = [
   },
 
   {
-    id: uniqid(),
+    id: 'avocado',
     title: 'Avocado',
     category: 'produce',
     price: 2.5,
@@ -77,7 +75,7 @@ const productData = [
   },
 
   {
-    id: uniqid(),
+    id: 'bananas',
     title: 'Bananas',
     category: 'produce',
     price: 2,
@@ -87,7 +85,7 @@ const productData = [
   },
 
   {
-    id: uniqid(),
+    id: 'cucumber',
     title: 'Cucumber',
     category: 'produce',
     price: 4,
@@ -97,7 +95,7 @@ const productData = [
   },
 
   {
-    id: uniqid(),
+    id: 'grapes',
     title: 'Grapes',
     category: 'produce',
     price: 5,
@@ -107,7 +105,7 @@ const productData = [
   },
 
   {
-    id: uniqid(),
+    id: 'pineapple',
     title: 'Pineapple',
     category: 'produce',
     price: 7,
@@ -117,7 +115,7 @@ const productData = [
   },
 
   {
-    id: uniqid(),
+    id: 'mushrooms',
     title: 'Mushrooms',
     category: 'produce',
     price: 2,
@@ -127,7 +125,7 @@ const productData = [
   },
 
   {
-    id: uniqid(),
+    id: 'raspberries',
     title: 'Raspberries',
     category: 'produce',
     price: 6,
@@ -137,7 +135,7 @@ const productData = [
   },
 
   {
-    id: uniqid(),
+    id: 'eggplant',
     title: 'Eggplant',
     category: 'produce',
     price: 4,
@@ -147,7 +145,7 @@ const productData = [
   },
 
   {
-    id: uniqid(),
+    id: 'zucchini',
     title: 'Zucchini',
     category: 'produce',
     price: 2,
@@ -157,7 +155,7 @@ const productData = [
   },
 
   {
-    id: uniqid(),
+    id: 'oranges',
     title: 'Oranges',
     category: 'produce',
     price: 10,
@@ -167,7 +165,7 @@ const productData = [
   },
 
   {
-    id: uniqid(),
+    id: 'watermelon',
     title: 'Watermelon',
     category: 'produce',
     price: 10,
@@ -177,7 +175,7 @@ const productData = [
   },
 
   {
-    id: uniqid(),
+    id: 'sourdough',
     title: 'Sourdough Bread',
     category: 'bakery',
     price: 8,
@@ -187,7 +185,7 @@ const productData = [
   },
 
   {
-    id: uniqid(),
+    id: 'baguette',
     title: 'Fresh Baguette',
     category: 'bakery',
     price: 5.5,
@@ -197,7 +195,7 @@ const productData = [
   },
 
   {
-    id: uniqid(),
+    id: 'muffins',
     title: 'Blueberry muffins (6)',
     category: 'bakery',
     price: 12,
@@ -207,7 +205,7 @@ const productData = [
   },
 
   {
-    id: uniqid(),
+    id: 'cinnamon-rolls',
     title: 'Cinnamon rolls (6)',
     category: 'bakery',
     price: 12,
@@ -217,7 +215,7 @@ const productData = [
   },
 
   {
-    id: uniqid(),
+    id: 'brownies',
     title: 'Chocolate brownies (6)',
     category: 'bakery',
     price: 12,
@@ -227,7 +225,7 @@ const productData = [
   },
 
   {
-    id: uniqid(),
+    id: 'pie',
     title: 'Apple pie',
     category: 'bakery',
     price: 15,
@@ -237,7 +235,7 @@ const productData = [
   },
 
   {
-    id: uniqid(),
+    id: 'milk',
     title: '1% Milk',
     category: 'dairy',
     price: 9,
@@ -247,7 +245,7 @@ const productData = [
   },
 
   {
-    id: uniqid(),
+    id: 'cheese',
     title: 'Swiss Cheese',
     category: 'dairy',
     price: 8,
@@ -257,7 +255,7 @@ const productData = [
   },
 
   {
-    id: uniqid(),
+    id: 'eggs',
     title: 'Free Range Eggs',
     category: 'dairy',
     price: 8,

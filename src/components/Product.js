@@ -4,7 +4,7 @@ import UpdateCart from './UpdateCart';
 
 function Product({ product, linksActive, showAll }) {
   const title = <h4>{product.title}</h4>;
-  const img = <img src={product.imgUrl} alt={product.title} />;
+  const img = <img src={product.imgUrl} alt={product.id} />;
 
   const fullUrl = `${product.category}/${product.id}`;
   const partialUrl = product.id;
