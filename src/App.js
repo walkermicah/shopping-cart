@@ -10,7 +10,8 @@ import RootLayout from './layouts/RootLayout';
 import Cart from './components/Cart';
 import Contact from './pages/Contact';
 import Home from './pages/Home';
-import Products from './pages/Products';
+import ProductsLayout from './layouts/ProductsLayout';
+import ProductList from './components/ProductList';
 
 import './styles/App.scss';
 
@@ -19,7 +20,11 @@ const router = createBrowserRouter(
     <Route path="/" element={<RootLayout />}>
       <Route index element={<Home />} />
       <Route path="contact" element={<Contact />} />
-      <Route path="products" element={<Products />} />
+      <Route path="products" element={<ProductsLayout />}>
+        <Route index element={<ProductList />} />
+        <Route path=":productType" element={<ProductList />} />
+        {/* Open as modal: <Route path=":productID" element={<Product />} /> */}
+      </Route>
       <Route path="cart" element={<Cart />} />
     </Route>
   )

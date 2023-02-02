@@ -1,0 +1,41 @@
+.ProductsLayout {
+  height: 100%;
+
+  nav {
+    padding: 2rem;
+
+    ul {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    li {
+      padding: 0.5rem 2rem;
+      border-radius: 15px;
+      background-color: black;
+      transition: transform 0.2s;
+
+      &:hover {
+        transform: translateY(-1px);
+      }
+
+      a {
+        font-size: 1.75rem;
+        text-decoration: none;
+        color: white;
+      }
+    }
+  }
+}
+
+/* 400px  */
+@media only screen and (max-width: 25em) {
+  .ProductsLayout nav {
+    padding: 2rem 0.5rem;
+
+    ul {
+      gap: 1rem;
+    }
+  }
+}

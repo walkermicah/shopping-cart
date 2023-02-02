@@ -1,0 +1,35 @@
+.UpdateCart {
+  &-add {
+    width: 10rem;
+    padding: 0.75rem 0rem;
+    color: white;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+  }
+
+  &-edit {
+    width: 10rem;
+    display: flex;
+
+    button {
+      border: none;
+      cursor: pointer;
+      color: white;
+      background-color: black;
+      font-size: 2rem;
+      width: 3rem;
+    }
+
+    input {
+      width: 40%;
+      border: 1px solid black;
+      padding: 0.5rem;
+      text-align: center;
+    }
+
+    input:focus {
+      outline: none;
+    }
+  }
+}

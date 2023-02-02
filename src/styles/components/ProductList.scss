@@ -1,0 +1,9 @@
+@import '../abstracts/mixins.scss';
+
+.ProductList {
+  color: rgb(0, 0, 0);
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: 3rem;
+}

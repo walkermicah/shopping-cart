@@ -18,21 +18,21 @@ import watermelon from '../img/products/watermelon.png';
 import sourdough from '../img/products/sourdough.png';
 import baguette from '../img/products/baguette.png';
 import muffin from '../img/products/muffin.png';
-import cinammonRoll from '../img/products/cinammon-roll.png';
+import cinammonRoll from '../img/products/cinnamon-roll.jpg';
 import brownie from '../img/products/brownie.png';
 import pie from '../img/products/pie.png';
 import milk from '../img/products/milk.png';
-import cheddar from '../img/products/cheddar.png';
+import swiss from '../img/products/swiss.png';
 import eggs from '../img/products/eggs.png';
 
-const products = [
+const productData = [
   {
     id: uniqid(),
     title: 'Apples (Granny Smith)',
     category: 'produce',
     price: 1.5,
     unit: 'each',
-    quantity: 0,
+    quantity: 1,
     imgUrl: greenApple,
   },
 
@@ -240,7 +240,7 @@ const products = [
     id: uniqid(),
     title: '1% Milk',
     category: 'dairy',
-    price: 5,
+    price: 9,
     unit: 'each',
     quantity: 0,
     imgUrl: milk,
@@ -248,12 +248,12 @@ const products = [
 
   {
     id: uniqid(),
-    title: 'Cheddar Cheese',
+    title: 'Swiss Cheese',
     category: 'dairy',
     price: 8,
     unit: 'each',
     quantity: 0,
-    imgUrl: cheddar,
+    imgUrl: swiss,
   },
 
   {
@@ -267,4 +267,4 @@ const products = [
   },
 ];
 
-export default products;
+export default productData;

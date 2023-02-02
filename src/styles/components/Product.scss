@@ -1,0 +1,22 @@
+.ProductList .Product {
+  text-align: center;
+  border: 1px solid black;
+  padding: 1rem;
+  display: grid;
+  gap: 1.5rem;
+  justify-items: center;
+
+  h4 {
+    font-size: 1.75rem;
+    font-weight: 400;
+  }
+
+  img {
+    width: 12rem;
+    height: 12rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+}
