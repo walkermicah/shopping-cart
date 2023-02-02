@@ -13,7 +13,7 @@ function ProductList() {
   return (
     <div className="ProductList">
       {products.map((p) => (
-        <Product key={p.id} product={p} />
+        <Product key={p.id} product={p} linksActive={true} />
       ))}
     </div>
   );

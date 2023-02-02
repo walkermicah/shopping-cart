@@ -12,6 +12,7 @@ import Contact from './pages/Contact';
 import Home from './pages/Home';
 import ProductsLayout from './layouts/ProductsLayout';
 import ProductList from './components/ProductList';
+import ProductDetails from './components/ProductDetails';
 
 import './styles/App.scss';
 
@@ -23,7 +24,7 @@ const router = createBrowserRouter(
       <Route path="products" element={<ProductsLayout />}>
         <Route index element={<ProductList />} />
         <Route path=":productType" element={<ProductList />} />
-        {/* Open as modal: <Route path=":productID" element={<Product />} /> */}
+        <Route path=":productType/:productID" element={<ProductDetails />} />
       </Route>
       <Route path="cart" element={<Cart />} />
     </Route>
