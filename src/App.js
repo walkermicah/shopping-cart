@@ -16,22 +16,22 @@ import ProductDetails from './components/ProductDetails';
 
 import './styles/App.scss';
 
-const router = createBrowserRouter(
-  createRoutesFromElements(
-    <Route path="/" element={<RootLayout />}>
-      <Route index element={<Home />} />
-      <Route path="contact" element={<Contact />} />
-      <Route path="products" element={<ProductsLayout />}>
-        <Route index element={<ProductList />} />
-        <Route path=":productType" element={<ProductList />} />
-        <Route path=":productType/:productID" element={<ProductDetails />} />
-      </Route>
-      <Route path="cart" element={<Cart />} />
-    </Route>
-  )
-);
-
 function App() {
+  const router = createBrowserRouter(
+    createRoutesFromElements(
+      <Route path="/" element={<RootLayout />}>
+        <Route index element={<Home />} />
+        <Route path="contact" element={<Contact />} />
+        <Route path="products" element={<ProductsLayout />}>
+          <Route index element={<ProductList />} />
+          <Route path=":productType" element={<ProductList />} />
+          <Route path=":productType/:productID" element={<ProductDetails />} />
+        </Route>
+        <Route path="cart" element={<Cart />} />
+      </Route>
+    )
+  );
+
   return <RouterProvider router={router} />;
 }
 

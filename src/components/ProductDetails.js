@@ -4,7 +4,6 @@ import Product from './Product';
 
 function ProductDetails() {
   const productID = useParams().productID;
-
   const [product] = productData.filter((p) => p.id === productID);
 
   return <Product product={product} />;

@@ -10,10 +10,12 @@ function ProductList() {
     ? productData.filter((p) => p.category === productType)
     : productData;
 
+  const showAll = !productType;
+
   return (
     <div className="ProductList">
       {products.map((p) => (
-        <Product key={p.id} product={p} linksActive={true} />
+        <Product key={p.id} product={p} linksActive={true} showAll={showAll} />
       ))}
     </div>
   );

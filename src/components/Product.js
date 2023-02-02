@@ -2,14 +2,17 @@ import { Link } from 'react-router-dom';
 import '../styles/components/Product.scss';
 import UpdateCart from './UpdateCart';
 
-function Product({ product, linksActive }) {
+function Product({ product, linksActive, showAll }) {
   const title = <h4>{product.title}</h4>;
   const img = <img src={product.imgUrl} alt={product.title} />;
+
+  const fullUrl = `${product.category}/${product.id}`;
+  const partialUrl = product.id;
 
   return (
     <div className="Product">
       {linksActive ? (
-        <Link to={product.id}>
+        <Link to={showAll ? fullUrl : partialUrl}>
           {title}
           {img}
         </Link>
