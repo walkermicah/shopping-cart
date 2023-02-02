@@ -9,6 +9,7 @@ import RootLayout from './layouts/RootLayout';
 
 import Cart from './components/Cart';
 import Contact from './pages/Contact';
+import Error from './pages/Error';
 import Home from './pages/Home';
 import ProductsLayout from './layouts/ProductsLayout';
 import ProductList from './components/ProductList';
@@ -19,7 +20,7 @@ import './styles/App.scss';
 function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
-      <Route path="/" element={<RootLayout />}>
+      <Route path="/" element={<RootLayout />} errorElement={<Error />}>
         <Route index element={<Home />} />
         <Route path="contact" element={<Contact />} />
         <Route path="products" element={<ProductsLayout />}>

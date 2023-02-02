@@ -1,0 +1,46 @@
+@import '../abstracts/mixins';
+
+.Error {
+  @include background-img;
+  height: 100vh;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Lato', sans-serif;
+
+  &-message {
+    @include page-content;
+    padding: 3rem;
+    color: white;
+    margin-bottom: 15rem;
+    text-align: center;
+    display: grid;
+    gap: 2rem;
+  }
+
+  h3 {
+    font-size: 5rem;
+  }
+
+  p {
+    font-size: 2rem;
+    font-weight: 300;
+  }
+
+  button {
+    justify-self: center;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    padding: 1rem 2rem;
+    border-radius: 3px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+
+  button:hover {
+    transform: translateY(-1px);
+  }
+}
