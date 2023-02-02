@@ -9,10 +9,10 @@ function RootLayout() {
     <div className="RootLayout">
       <header>
         <nav className="RootLayout-nav">
-          <div className="RootLayout-nav-title">
+          <Link to="/" className="RootLayout-nav-title">
             <h1>InstaCarrot</h1>
             <img src={logo} alt="logo"></img>
-          </div>
+          </Link>
 
           <ul>
             <li>
