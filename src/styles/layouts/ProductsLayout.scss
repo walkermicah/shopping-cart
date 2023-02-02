@@ -11,7 +11,6 @@
     }
 
     li {
-      padding: 0.5rem 2rem;
       border-radius: 15px;
       background-color: black;
       transition: transform 0.2s;
@@ -21,6 +20,8 @@
       }
 
       a {
+        display: block;
+        padding: 0.5rem 2rem;
         font-size: 1.75rem;
         text-decoration: none;
         color: white;

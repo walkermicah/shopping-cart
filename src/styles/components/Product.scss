@@ -1,18 +1,39 @@
 .Product {
   text-align: center;
-  padding: 1rem;
+  padding: 4rem;
   display: grid;
-  gap: 1.5rem;
+  gap: 3rem;
   justify-items: center;
 
   h4 {
-    font-size: 1.75rem;
     font-weight: 400;
+    font-size: 3rem;
+    margin-bottom: 3rem;
   }
 
   a {
     color: black;
     text-decoration: none;
+  }
+
+  img {
+    width: 15rem;
+    height: 15rem;
+  }
+
+  p {
+    font-size: 2.5rem;
+  }
+}
+
+.ProductList .Product {
+  border: 1px solid black;
+  padding: 1rem;
+  gap: 1.5rem;
+
+  h4 {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
   }
 
   img {
@@ -23,8 +44,4 @@
   p {
     font-size: 1.5rem;
   }
-}
-
-.ProductList .Product {
-  border: 1px solid black;
 }
