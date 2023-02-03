@@ -1,0 +1,38 @@
+.Cart-item {
+  display: grid;
+  grid-template-areas:
+    'img title update total'
+    'img price update total';
+  grid-template-columns: min-content repeat(3, 1fr);
+  justify-items: end;
+  gap: 0.5rem;
+
+  img {
+    grid-area: img;
+    margin-right: 1rem;
+    width: 3rem;
+    height: 3rem;
+  }
+
+  &-title {
+    font-weight: 400;
+    justify-self: start;
+    font-size: 1.5rem;
+  }
+
+  &-price {
+    font-size: 1.25rem;
+    justify-self: start;
+  }
+
+  &-total {
+    font-size: 1.75rem;
+    grid-area: total;
+    align-self: center;
+  }
+
+  .UpdateCart-edit {
+    grid-area: update;
+    align-self: center;
+  }
+}
