@@ -4,7 +4,7 @@ import Product from './Product';
 
 function ProductDetails({ cart, cartMethods }) {
   const productID = useParams().productID;
-  const [product] = productData.filter((p) => p.id === productID);
+  const product = productData.find((p) => p.id === productID);
 
   if (!product) throw new Error('Product does not exist.');
 

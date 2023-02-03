@@ -3,7 +3,7 @@ import '../styles/components/UpdateCart.scss';
 function UpdateCart({ product, cart, cartMethods }) {
   const { add, increase, decrease, acceptInput } = cartMethods;
 
-  const [productInCart] = cart.filter((p) => p.id === product.id);
+  const productInCart = cart.find((p) => p.id === product.id);
 
   const handleChange = (e) => {
     acceptInput(product, e.target.value);

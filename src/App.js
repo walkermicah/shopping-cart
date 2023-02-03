@@ -10,13 +10,13 @@ import {
 import RootLayout from './layouts/RootLayout';
 import ProductsLayout from './layouts/ProductsLayout';
 
+import Home from './pages/Home';
+import Cart from './pages/Cart'; // make a page
 import Contact from './pages/Contact';
 import Error from './pages/Error';
-import Home from './pages/Home';
 
 import ProductList from './components/ProductList';
 import ProductDetails from './components/ProductDetails';
-import Cart from './components/Cart'; // make a page
 
 import './styles/App.scss';
 
@@ -31,7 +31,12 @@ function App() {
   const addToCart = (product) => {
     setCart((c) => [
       ...c,
-      { id: product.id, quantity: 1, price: product.price },
+      {
+        id: product.id,
+        title: product.title,
+        quantity: 1,
+        price: product.price.toFixed(2),
+      },
     ]);
   };
 
@@ -50,7 +55,7 @@ function App() {
   const increaseQuantity = (product) => editQuantity(product, +1);
 
   const decreaseQuantity = (product) => {
-    const [itemToDecrease] = cart.filter((p) => product.id === p.id);
+    const itemToDecrease = cart.find((p) => product.id === p.id);
     if (itemToDecrease.quantity <= 1) {
       removeFromCart(product);
     } else {
@@ -95,7 +100,10 @@ function App() {
             element={<ProductDetails cart={cart} cartMethods={cartMethods} />}
           />
         </Route>
-        <Route path="cart" element={<Cart />} />
+        <Route
+          path="cart"
+          element={<Cart cart={cart} cartMethods={cartMethods} />}
+        />
       </Route>
     )
   );
