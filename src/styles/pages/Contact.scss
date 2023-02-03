@@ -9,6 +9,9 @@
 
   &-form {
     @include page-content;
+    padding: 0rem 3rem;
+    width: 45%;
+    background-color: black;
 
     h3 {
       text-align: center;
