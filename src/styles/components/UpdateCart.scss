@@ -11,6 +11,7 @@
   &-edit {
     width: 10rem;
     display: flex;
+    border: 1px solid black;
 
     button {
       border: none;
@@ -23,7 +24,7 @@
 
     input {
       width: 40%;
-      border: 1px solid black;
+      border: none;
       padding: 0.5rem;
       text-align: center;
     }
