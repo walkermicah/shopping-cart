@@ -30,7 +30,6 @@ const productData = [
     category: 'produce',
     price: 1.5,
     unit: 'each',
-    quantity: 0,
     imgUrl: greenApple,
   },
 
@@ -40,7 +39,6 @@ const productData = [
     category: 'produce',
     price: 1.5,
     unit: 'each',
-    quantity: 0,
     imgUrl: redApple,
   },
 
@@ -50,7 +48,6 @@ const productData = [
     category: 'produce',
     price: 4.5,
     unit: 'each',
-    quantity: 0,
     imgUrl: broccoli,
   },
 
@@ -60,7 +57,6 @@ const productData = [
     category: 'produce',
     price: 6,
     unit: 'per lb',
-    quantity: 0,
     imgUrl: tomatoes,
   },
 
@@ -70,7 +66,6 @@ const productData = [
     category: 'produce',
     price: 2.5,
     unit: 'each',
-    quantity: 0,
     imgUrl: avocado,
   },
 
@@ -80,7 +75,6 @@ const productData = [
     category: 'produce',
     price: 2,
     unit: 'per lb',
-    quantity: 0,
     imgUrl: bananas,
   },
 
@@ -90,7 +84,6 @@ const productData = [
     category: 'produce',
     price: 4,
     unit: 'each',
-    quantity: 0,
     imgUrl: cucumber,
   },
 
@@ -100,7 +93,6 @@ const productData = [
     category: 'produce',
     price: 5,
     unit: 'per lb',
-    quantity: 0,
     imgUrl: grapes,
   },
 
@@ -110,7 +102,6 @@ const productData = [
     category: 'produce',
     price: 7,
     unit: 'each',
-    quantity: 0,
     imgUrl: pineapple,
   },
 
@@ -120,7 +111,6 @@ const productData = [
     category: 'produce',
     price: 2,
     unit: 'per 100g',
-    quantity: 0,
     imgUrl: mushroom,
   },
 
@@ -130,7 +120,6 @@ const productData = [
     category: 'produce',
     price: 6,
     unit: 'per pint',
-    quantity: 0,
     imgUrl: raspberries,
   },
 
@@ -140,7 +129,6 @@ const productData = [
     category: 'produce',
     price: 4,
     unit: 'each',
-    quantity: 0,
     imgUrl: eggplant,
   },
 
@@ -150,7 +138,6 @@ const productData = [
     category: 'produce',
     price: 2,
     unit: 'each',
-    quantity: 0,
     imgUrl: zucchini,
   },
 
@@ -160,7 +147,6 @@ const productData = [
     category: 'produce',
     price: 10,
     unit: 'per bag',
-    quantity: 0,
     imgUrl: oranges,
   },
 
@@ -170,7 +156,6 @@ const productData = [
     category: 'produce',
     price: 10,
     unit: 'each',
-    quantity: 0,
     imgUrl: watermelon,
   },
 
@@ -180,7 +165,6 @@ const productData = [
     category: 'bakery',
     price: 8,
     unit: 'per loaf',
-    quantity: 0,
     imgUrl: sourdough,
   },
 
@@ -190,7 +174,6 @@ const productData = [
     category: 'bakery',
     price: 5.5,
     unit: 'each',
-    quantity: 0,
     imgUrl: baguette,
   },
 
@@ -200,7 +183,6 @@ const productData = [
     category: 'bakery',
     price: 12,
     unit: 'per pack',
-    quantity: 0,
     imgUrl: muffin,
   },
 
@@ -210,7 +192,6 @@ const productData = [
     category: 'bakery',
     price: 12,
     unit: 'per pack',
-    quantity: 0,
     imgUrl: cinammonRoll,
   },
 
@@ -220,7 +201,6 @@ const productData = [
     category: 'bakery',
     price: 12,
     unit: 'per pack',
-    quantity: 0,
     imgUrl: brownie,
   },
 
@@ -230,7 +210,6 @@ const productData = [
     category: 'bakery',
     price: 15,
     unit: 'each',
-    quantity: 0,
     imgUrl: pie,
   },
 
@@ -240,7 +219,6 @@ const productData = [
     category: 'dairy',
     price: 9,
     unit: 'each',
-    quantity: 0,
     imgUrl: milk,
   },
 
@@ -250,7 +228,6 @@ const productData = [
     category: 'dairy',
     price: 8,
     unit: 'each',
-    quantity: 0,
     imgUrl: swiss,
   },
 
@@ -260,7 +237,6 @@ const productData = [
     category: 'dairy',
     price: 8,
     unit: 'per dozen',
-    quantity: 0,
     imgUrl: eggs,
   },
 ];

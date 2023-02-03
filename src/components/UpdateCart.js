@@ -1,17 +1,33 @@
 import '../styles/components/UpdateCart.scss';
 
-function UpdateCart({ quantity }) {
-  const addToCart = <button className="UpdateCart-add">Add</button>;
+function UpdateCart({ product, cart, cartMethods }) {
+  const { add, increase, decrease, acceptInput } = cartMethods;
 
-  const editCart = (
+  const [productInCart] = cart.filter((p) => p.id === product.id);
+
+  const handleChange = (e) => {
+    acceptInput(product, e.target.value);
+  };
+
+  const addBtn = (
+    <button className="UpdateCart-add" onClick={() => add(product)}>
+      Add
+    </button>
+  );
+
+  const editBtn = (
     <div className="UpdateCart-edit">
-      <button>-</button>
-      <input type="text" placeholder={quantity}></input>
-      <button>+</button>
+      <button onClick={() => decrease(product)}>-</button>
+      <input
+        type="text"
+        onChange={handleChange}
+        value={productInCart && productInCart.quantity}
+      ></input>
+      <button onClick={() => increase(product)}>+</button>
     </div>
   );
 
-  return quantity > 0 ? editCart : addToCart;
+  return productInCart ? editBtn : addBtn;
 }
 
 export default UpdateCart;

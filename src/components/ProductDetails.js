@@ -2,13 +2,13 @@ import { useParams } from 'react-router-dom';
 import productData from '../data/productData';
 import Product from './Product';
 
-function ProductDetails() {
+function ProductDetails({ cart, cartMethods }) {
   const productID = useParams().productID;
   const [product] = productData.filter((p) => p.id === productID);
 
   if (!product) throw new Error('Product does not exist.');
 
-  return <Product product={product} />;
+  return <Product product={product} cart={cart} cartMethods={cartMethods} />;
 }
 
 export default ProductDetails;

@@ -3,9 +3,8 @@ import Product from './Product';
 import productData from '../data/productData';
 import '../styles/components/ProductList.scss';
 
-function ProductList() {
+function ProductList({ cart, cartMethods }) {
   const productType = useParams().productType;
-
   const products = productType
     ? productData.filter((p) => p.category === productType)
     : productData;
@@ -18,7 +17,14 @@ function ProductList() {
   return (
     <div className="ProductList">
       {products.map((p) => (
-        <Product key={p.id} product={p} linksActive={true} showAll={showAll} />
+        <Product
+          key={p.id}
+          product={p}
+          linksActive={true}
+          showAll={showAll}
+          cart={cart}
+          cartMethods={cartMethods}
+        />
       ))}
     </div>
   );

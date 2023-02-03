@@ -4,7 +4,7 @@ import logo from '../img/logo.svg';
 
 import '../styles/layouts/RootLayout.scss';
 
-function RootLayout() {
+function RootLayout({ nItems }) {
   return (
     <div className="RootLayout">
       <header>
@@ -28,7 +28,7 @@ function RootLayout() {
 
           <Link to="cart" className="RootLayout-nav-link">
             <i className="fa-solid fa-cart-shopping"></i>
-            <span>3</span>
+            <span>{nItems}</span>
           </Link>
         </nav>
       </header>
