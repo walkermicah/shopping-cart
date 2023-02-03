@@ -5,11 +5,12 @@
   padding: 2rem;
   display: flex;
   justify-content: center;
+  align-items: start;
 
   &-items {
     @include page-content;
     width: 40%;
-
+    min-height: 40rem;
     color: black;
     background-color: white;
     display: grid;
