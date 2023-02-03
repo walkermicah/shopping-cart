@@ -2,6 +2,9 @@
 
 .Home {
   @include background-img;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   &-banner {
     padding: 3rem;
