@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 import {
-  createHashRouter,
+  createBrowserRouter,
   createRoutesFromElements,
   Route,
   RouterProvider,
@@ -77,7 +77,7 @@ function App() {
     acceptInput: inputQuantity,
   };
 
-  const router = createHashRouter(
+  const router = createBrowserRouter(
     createRoutesFromElements(
       <Route
         path="/"
@@ -105,7 +105,8 @@ function App() {
           element={<Cart cart={cart} cartMethods={cartMethods} />}
         />
       </Route>
-    )
+    ),
+    { basename: '/home' }
   );
 
   return <RouterProvider router={router} />;
