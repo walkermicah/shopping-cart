@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 import {
-  createHashRouter,
+  createBrowserRouter,
   createRoutesFromElements,
   Route,
   RouterProvider,
@@ -77,7 +77,7 @@ function App() {
     acceptInput: inputQuantity,
   };
 
-  const router = createHashRouter(
+  const router = createBrowserRouter(
     createRoutesFromElements(
       <Route
         path="/"
