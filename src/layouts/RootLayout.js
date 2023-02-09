@@ -28,7 +28,7 @@ function RootLayout({ nItems }) {
 
           <Link to="cart" className="RootLayout-nav-link">
             <i className="fa-solid fa-cart-shopping"></i>
-            <span>{nItems}</span>
+            <span data-testid="n-items">{nItems}</span>
           </Link>
         </nav>
       </header>

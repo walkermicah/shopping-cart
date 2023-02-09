@@ -18,8 +18,6 @@ import Error from './pages/Error';
 import ProductList from './components/ProductList';
 import ProductDetails from './components/ProductDetails';
 
-import './styles/App.scss';
-
 function App() {
   const [cart, setCart] = useState([]);
 
@@ -64,7 +62,7 @@ function App() {
   };
 
   const inputQuantity = (product, newQuantity) => {
-    if (newQuantity < 0) return;
+    if (newQuantity < 0 || isNaN(newQuantity)) return;
     setCart((c) =>
       c.map((p) => (p.id === product.id ? { ...p, quantity: +newQuantity } : p))
     );

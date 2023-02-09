@@ -12,7 +12,7 @@ function ProductList({ cart, cartMethods }) {
   const showAll = !productType;
 
   if (productType && !['produce', 'bakery', 'dairy'].includes(productType))
-    throw new Error('Invalid product category.');
+    throw Error('Invalid product category.');
 
   return (
     <div className="ProductList">

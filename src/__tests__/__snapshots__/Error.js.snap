@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Error Page Component Renders error page 1`] = `
+<div>
+  <div
+    class="Error"
+  >
+    <div
+      class="Error-message"
+    >
+      <h3>
+        Error!
+      </h3>
+      <p>
+        Page could not be found.
+      </p>
+      <p />
+      <button>
+        Go back
+      </button>
+    </div>
+  </div>
+</div>
+`;

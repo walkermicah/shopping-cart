@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Root Layout Component Renders root layout header and main 1`] = `
+<div>
+  <div
+    class="RootLayout"
+  >
+    <header>
+      <nav
+        class="RootLayout-nav"
+      >
+        <a
+          class="RootLayout-nav-title"
+          href="/"
+        >
+          <h1>
+            InstaCarrot
+          </h1>
+          <img
+            alt="logo"
+            src="logo.svg"
+          />
+        </a>
+        <ul>
+          <li>
+            <a
+              aria-current="page"
+              class="active"
+              href="/"
+            >
+              Home
+            </a>
+          </li>
+          <li>
+            <a
+              class=""
+              href="/products"
+            >
+              Products
+            </a>
+          </li>
+          <li>
+            <a
+              class=""
+              href="/contact"
+            >
+              Contact
+            </a>
+          </li>
+        </ul>
+        <a
+          class="RootLayout-nav-link"
+          href="/cart"
+        >
+          <i
+            class="fa-solid fa-cart-shopping"
+          />
+          <span
+            data-testid="n-items"
+          />
+        </a>
+      </nav>
+    </header>
+    <main />
+  </div>
+</div>
+`;

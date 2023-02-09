@@ -9,12 +9,18 @@ function CartItem({ product, cart, cartMethods }) {
         src={productData.find((pr) => pr.id === product.id).imgUrl}
         alt={product.id}
       />
-      <p className="Cart-item-title"> {product.title}</p>
-      <UpdateCart product={product} cart={cart} cartMethods={cartMethods} />
-      <p className="Cart-item-price"> {product.price} each</p>
-      <p className="Cart-item-total">
+      <p className="Cart-item-title" data-testid="cartItem-title">
         {' '}
-        {(product.price * product.quantity).toFixed(2)}
+        {product.title}
+      </p>
+      <UpdateCart product={product} cart={cart} cartMethods={cartMethods} />
+      <p className="Cart-item-price" data-testid="cartItem-price">
+        {' '}
+        ${product.price} each
+      </p>
+      <p className="Cart-item-total" data-testid="cartItem-total">
+        {' '}
+        ${(product.price * product.quantity).toFixed(2)}
       </p>
     </div>
   );

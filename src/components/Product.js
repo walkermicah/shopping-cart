@@ -23,7 +23,7 @@ function Product({ product, linksActive, showAll, cart, cartMethods }) {
         </div>
       )}
 
-      <p>
+      <p data-testid="product-price">
         ${product.price.toFixed(2)} {product.unit}
       </p>
       <UpdateCart product={product} cart={cart} cartMethods={cartMethods} />

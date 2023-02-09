@@ -9,12 +9,17 @@ function Cart({ cart, cartMethods }) {
 
         <div className="Cart-items-list">
           {cart.map((p) => (
-            <CartItem product={p} cart={cart} cartMethods={cartMethods} />
+            <CartItem
+              key={p.id}
+              product={p}
+              cart={cart}
+              cartMethods={cartMethods}
+            />
           ))}
         </div>
 
         <div className="Cart-items-total">
-          <p>
+          <p data-testid="total-test">
             Total:{' '}
             {cart
               .reduce(
